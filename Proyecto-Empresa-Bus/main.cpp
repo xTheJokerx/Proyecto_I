@@ -2,6 +2,7 @@
 #include "Contenedor-Asiento.h"
 
 int main() {
+	cout << "hello world\n";
 	Asiento * a = new Asiento('Z','4');
 	ContenedorAsiento * b = new ContenedorAsiento;
 	
