@@ -1,37 +1,38 @@
 #include "Asiento.h"
 
-Asiento::Asiento(){
-	letra = ' ';
-	numero = '0';
+Asiento::Asiento() {
+	letra = "Z";
+	numero = 0;
+	disponible = true;
 }
 
-Asiento::Asiento(char a, char n){
-	letra = a;
-	numero = n;
+Asiento::Asiento(string le, int num) {
+	letra = le;
+	numero = num;
+	disponible = true;
 }
 
-Asiento::~Asiento(){
-	cout << "Asiento borrado" << endl;
-}
 
-char Asiento::getLetra(){
-	return letra;
-}
+Asiento::~Asiento() { cout << "me mori" << endl; }
 
-int Asiento::getNumero(){
-	return (numero-48); //Se le resta el 48 porque el numero lo retorna como el valor
-}						// del caracter ASCII
+string Asiento::getLetra() { return letra; }
 
-void Asiento::setLetra(char a){
-	letra = a;
-}
+int Asiento::getNumero() { return numero; }
 
-void Asiento::setNumero(char n){
-	numero = n;
-}
+bool Asiento::getDisponible() { return disponible; }
 
-string Asiento::toString(){
-	stringstream p;
-	p << getLetra() << getNumero();
-	return p.str();
+void Asiento::setLetra(string l) { letra = l; }
+
+void Asiento::setNumero(int n) { numero = n; }
+
+void Asiento::setDisponible(bool no) { disponible = no; }
+
+string Asiento::toString() {
+	stringstream s;
+	if (getDisponible())
+		s << getLetra() << getNumero() << ": (L)";
+	else
+		s << getLetra() << getNumero() << ": (O)";
+	return s.str();
+
 }

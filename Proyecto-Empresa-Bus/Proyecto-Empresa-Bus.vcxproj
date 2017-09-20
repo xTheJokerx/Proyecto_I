@@ -112,17 +112,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Asiento.h" />
+    <ClInclude Include="Bus.h" />
     <ClInclude Include="Carrera.h" />
     <ClInclude Include="Contenedor-Asiento.h" />
+    <ClInclude Include="Contenedor-Bus.h" />
+    <ClInclude Include="Empresa.h" />
     <ClInclude Include="Tiempo.h" />
     <ClInclude Include="Ruta.h" />
+    <ClInclude Include="Tiquete.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Asiento.cpp" />
+    <ClCompile Include="Bus.cpp" />
+    <ClCompile Include="Carrera.cpp" />
     <ClCompile Include="Contenedor-Asiento.cpp" />
+    <ClCompile Include="Contenedor-Bus.cpp" />
+    <ClCompile Include="Empresa.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Tiempo.cpp" />
     <ClCompile Include="Ruta.cpp" />
+    <ClCompile Include="Tiquete.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

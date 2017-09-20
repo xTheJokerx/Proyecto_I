@@ -1,19 +1,24 @@
 #pragma once
 #include "Tiempo.h"
-#define MAX = 80;
+
+
 class Asiento {
 private:
-	char letra;
-	char numero;
-
+	string letra;
+	int numero;
+	bool disponible;
 public:
+
 	Asiento();
-	Asiento(char, char);
+	Asiento(string, int);
 	~Asiento();
-	char getLetra();
+	string getLetra();
 	int getNumero();
-	void setLetra(char);
-	void setNumero(char);
+	bool getDisponible();
+	void setLetra(string);
+	void setNumero(int);
+	void setDisponible(bool);
 	string toString();
+
 
 };

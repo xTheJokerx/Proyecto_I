@@ -8,6 +8,7 @@ private:
 	float monto;
 public:
 	Ruta();
+	Ruta(string,string,float);
 	~Ruta();
 	string getOrigen();
 	string getDestino();

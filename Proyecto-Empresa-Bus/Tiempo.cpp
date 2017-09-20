@@ -10,25 +10,15 @@ Tiempo::Tiempo(int h, int m) {
 	minuto = m;
 }
 
-Tiempo::~Tiempo() {
-	cout << "Hora borrada" << endl;
-}
+Tiempo::~Tiempo() { cout << "Hora borrada" << endl; }
 
-int Tiempo::getHora() {
-	return hora;
-}
+int Tiempo::getHora() { return hora; }
 
-int Tiempo::getMinuto() {
-	return minuto;
-}
+int Tiempo::getMinuto() { return minuto; }
 
-void Tiempo::setHora(int h) {
-	hora = h;
-}
+void Tiempo::setHora(int h) { hora = h; }
 
-void Tiempo::setMinuto(int m) {
-	minuto = m;
-}
+void Tiempo::setMinuto(int m) { minuto = m; }
 
 string Tiempo::toString() {
 	stringstream p;
